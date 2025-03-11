@@ -1,0 +1,24 @@
+{
+	"Title": "Simple Todo App",
+	"Home": {
+		"Title": "Home",
+		"Content": "Welcome to the simple todo app! It serves as a demonstration of internationalization in SvelteKit."
+	},
+	"Todos": {
+		"Title": "Todos",
+		"List": "List of todos",
+		"Labels": {
+			"Done": "Done?",
+			"Delete": "Delete",
+			"Create": "Create",
+			"New": "New Todo"
+		},
+		"Errors": {
+			"Empty": "The todo cannot be empty."
+		},
+		"Show_Done": "Show done todos",
+		"Create_Title": "Create a new todo",
+		"Summary": "There are {{ count }} todos in total.",
+		"Summary@Singular": "There is one todo in total."
+	}
+}

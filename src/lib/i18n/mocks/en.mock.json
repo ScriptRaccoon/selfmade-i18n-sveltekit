@@ -1,0 +1,8 @@
+{
+	"message": "message",
+	"profile": {
+		"settings": "Settings"
+	},
+	"views": "This page has {{ count }} views",
+	"views@Singular": "This page has one view"
+}
