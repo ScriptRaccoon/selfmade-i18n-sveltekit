@@ -4,7 +4,6 @@
 	import CreateTodo from '$lib/components/CreateTodo.svelte';
 	import Todos from '$lib/components/Todos.svelte';
 	import { TodosSchema, type TodoData } from '$lib/schemas/todos';
-	import { t } from '$lib/i18n/translate';
 
 	function get_todos(): TodoData[] {
 		if (!browser) return [];
@@ -40,9 +39,7 @@
 	});
 </script>
 
-<h1>
-	{t('Todos.Title')}
-</h1>
+<h1>Todos</h1>
 
 <CreateTodo create={create_todo} />
 

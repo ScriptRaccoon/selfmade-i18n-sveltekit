@@ -1,3 +1,7 @@
+**This is the branch with the starter code. It only contains the todo app.**
+
+---
+
 # Self-made Internationalization in SvelteKit
 
 This project shows how to leverage a SvelteKit application in several languages, without using any additional library.

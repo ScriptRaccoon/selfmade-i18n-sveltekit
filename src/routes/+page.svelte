@@ -1,9 +1,9 @@
 <script>
-	import { t } from '$lib/i18n/translate';
+	// ...
 </script>
 
-<h1>{t('Home.Title')}</h1>
+<h1>Home</h1>
 
 <p>
-	{t('Home.Content')}
+	Welcome to the simple todo app! It serves as a demonstration of internationalization in SvelteKit.
 </p>

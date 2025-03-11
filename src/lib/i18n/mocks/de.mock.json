@@ -1,8 +1,0 @@
-{
-	"message": "Nachricht",
-	"profile": {
-		"settings": "Einstellungen"
-	},
-	"views": "Diese Seite hat {{ count }} Aufrufe",
-	"views@Singular": "Diese Seite hat einen Aufruf"
-}

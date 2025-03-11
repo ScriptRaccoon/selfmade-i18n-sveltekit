@@ -1,17 +1,12 @@
 <script lang="ts">
-	import { setContext } from 'svelte';
 	import './app.css';
 	import Nav from '$lib/components/Nav.svelte';
-	import { t } from '$lib/i18n/translate';
-	import type { SupportedLanguage } from '$lib/i18n/config';
 
-	let { data, children } = $props();
-
-	setContext<SupportedLanguage>('lang', data.lang);
+	let { children } = $props();
 </script>
 
 <svelte:head>
-	<title>{t('Title')}</title>
+	<title>Simple Todo App</title>
 </svelte:head>
 
 <Nav />

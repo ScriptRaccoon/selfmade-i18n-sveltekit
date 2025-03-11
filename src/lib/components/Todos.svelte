@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { t } from '$lib/i18n/translate';
 	import type { TodoData } from '$lib/schemas/todos';
 	import Todo from './Todo.svelte';
 
@@ -16,12 +15,10 @@
 </script>
 
 <section>
-	<h2>
-		{t('Todos.List')}
-	</h2>
+	<h2>List of todos</h2>
 
 	<p class="small">
-		{t('Todos.Summary', { count: todos.length })}
+		There are {todos.length} todos in total.
 	</p>
 
 	<ul>
@@ -34,9 +31,7 @@
 
 	<label>
 		<input type="checkbox" bind:checked={show_done_todos} />
-		<span class="small">
-			{t('Todos.Show_Done')}
-		</span>
+		<span class="small">Show done todos</span>
 	</label>
 </section>
 

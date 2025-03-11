@@ -4,7 +4,6 @@
 	import Fa from 'svelte-fa';
 	import { faCheckCircle, faCircle, faTrashAlt } from '@fortawesome/free-regular-svg-icons';
 
-	import { t } from '$lib/i18n/translate';
 	import type { TodoData } from '$lib/schemas/todos';
 
 	type Props = {
@@ -22,15 +21,10 @@
 
 	<label>
 		<Fa icon={todo.done ? faCheckCircle : faCircle} />
-		<input
-			class="visually-hidden"
-			type="checkbox"
-			bind:checked={todo.done}
-			aria-label={t('Todos.Labels.Done')}
-		/>
+		<input class="visually-hidden" type="checkbox" bind:checked={todo.done} aria-label={'Done?'} />
 	</label>
 
-	<button onclick={() => delete_todo()} aria-label={t('Todos.Labels.Delete')}>
+	<button onclick={() => delete_todo()} aria-label={'Delete'}>
 		<Fa icon={faTrashAlt} />
 	</button>
 </div>

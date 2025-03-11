@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { t } from '$lib/i18n/translate';
-
 	type Props = {
 		create: (text: string) => void;
 	};
@@ -23,9 +21,7 @@
 </script>
 
 <section>
-	<h2>
-		{t('Todos.Create_Title')}
-	</h2>
+	<h2>Create a new todo</h2>
 
 	<form onsubmit={handle_submit}>
 		<label>
@@ -34,20 +30,16 @@
 				class="input"
 				class:invalid={error !== null}
 				bind:value={text}
-				aria-label={t('Todos.Labels.New')}
+				aria-label={'New todo'}
 				aria-describedby="todo_error"
 			/>
 		</label>
 
-		<button class="button">
-			{t('Todos.Labels.Create')}
-		</button>
+		<button class="button">Create</button>
 	</form>
 
 	{#if error === 'empty'}
-		<div class="error" id="todo_error">
-			{t('Todos.Errors.Empty')}
-		</div>
+		<div class="error" id="todo_error">The todo cannot be empty.</div>
 	{/if}
 </section>
 
